@@ -34,7 +34,7 @@
 | 3 | [Focus Plant: Pomodoro Forest](https://play.google.com/store/apps/details?id=com.shikudo.focus.google) | get raindrops to grow plants the more you work on your tasks | timers, dashboard with sessions data, can help/steal(?) raindrops from others |
 | 4 | [Habitica: Gamify your tasks](https://play.google.com/store/apps/details?id=com.habitrpg.android.habitica) | Complete tasks to raise your character's level and get equipments/items/pets? | creation of tasks, flexible scheduling for auto tasks, creation of 'rewards", pet system, achievements, challenges, team up with others to beat bosses, colour-coded tasks, events |
 
-### Other games (for gacha?? if we need ref)
+### Other games (for story and gacha ideas?? if we need ref)
 | no | link | description | features |
 |:---|:---|:---| :---|
 | 1 | [Genshin Impact](https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact) | 3D Open-world action game with an over-arching story of exploring and saving the world that you accidentally ended up isolated from your sibling in | gacha(lottery-ish) features to get diff rarity characters and weapons, periodic events to earn in-game currencies and materials, hidden chests and collectibles around the world, action combat, visit friends' worlds to play together |
