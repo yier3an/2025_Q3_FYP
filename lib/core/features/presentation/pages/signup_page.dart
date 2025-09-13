@@ -117,7 +117,7 @@ Widget build(BuildContext context) {
                             controller: _name,
                             keyboardType: TextInputType.name,
                             style: const TextStyle(color: Colors.black87),
-                            decoration: _inputDecoration('John Doe'),
+                            decoration: _inputDecoration('Billy Batson'),
                             onChanged: (_) => setState(() {}),
                           ),
                           const SizedBox(height: 16),
