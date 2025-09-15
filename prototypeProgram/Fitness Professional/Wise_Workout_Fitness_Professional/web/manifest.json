@@ -1,0 +1,9 @@
+{
+  "name": "Wise Workout – Fitness Professional",
+  "short_name": "WiseWorkoutPro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6A00F4",
+  "description": "Prototype of fitness professional dashboard (hardcoded)"
+}
