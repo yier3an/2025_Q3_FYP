@@ -31,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('Wise Workout (Mock)', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+                  const Text('Wise Workout Prototype', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
                   const SizedBox(height: 16),
                   TextField(controller: _email, decoration: const InputDecoration(labelText: 'Email')),
                   const SizedBox(height: 8),

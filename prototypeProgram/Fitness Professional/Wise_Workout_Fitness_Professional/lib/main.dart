@@ -7,6 +7,7 @@ import 'src/pages/workouts_page.dart';
 import 'src/pages/chat_list_page.dart';
 import 'src/pages/chat_page.dart';
 import 'src/pages/settings_page.dart';
+import 'src/theme/app_theme.dart';
 
 void main() {
   runApp(const WiseWorkoutApp());
@@ -35,7 +36,7 @@ class _WiseWorkoutAppState extends State<WiseWorkoutApp> {
     return MaterialApp(
       title: 'Wise Workout – Fitness Pro',
       debugShowCheckedModeBanner: false,
-      theme: _theme(),
+      theme: AppTheme.theme,
       // Simple routes
       routes: {
         '/': (_) => LoginPage(auth: auth),
