@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static const Color purpleLight = Color(0xFFE9E3FF);
-  static const Color purple      = Color(0xFF6C63FF);
+  static const Color purple      = Color(0xFF35063e);
   static const Color dark        = Colors.black;
 
   static ThemeData theme() {
@@ -12,8 +12,8 @@ class AppTheme {
       colorScheme: scheme.copyWith(primary: dark, secondary: purple),
 
       appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
+        backgroundColor: Color(0xFFCF9FFF),
+        foregroundColor: Colors.black,
         centerTitle: true,
         elevation: 0,
       ),

@@ -13,8 +13,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final _email = TextEditingController(text: 'user@demo.com');
-  final _pass  = TextEditingController(text: 'password123');
+  final _email = TextEditingController(text: 'user@gmail.com');
+  final _pass  = TextEditingController(text: 'user123');
   bool _loading = false;
   String? _error;
 
@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   const SizedBox(height: 12),
                   const Text(
-                    'Use demo accounts:\nuser@demo.com / password123\n'
+                    'Use demo accounts:\nuser@gmail.com / user123\n'
                     'instructor@demo.com / password123\n'
                     'admin@demo.com / password123',
                     textAlign: TextAlign.center,

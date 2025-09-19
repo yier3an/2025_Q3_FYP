@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+enum Tier { free, premium }
 
 class AppUser {
   final String id;
@@ -33,6 +34,7 @@ class AuthServiceMock extends ChangeNotifier {
   final List<AppUser> _accounts;
   final Map<String, UserProfile> _profiles = {};
   AppUser? _current;
+  AppUser? get current => _current;
 
   UserProfile? profileFor(String userId) => _profiles[userId];
 
