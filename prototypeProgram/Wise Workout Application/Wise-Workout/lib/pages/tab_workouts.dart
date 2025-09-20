@@ -5,6 +5,10 @@ import '../widgets_paywall.dart';
 import 'shared_header.dart';
 import 'settings_page.dart';
 import 'workout_edit_page.dart';
+<<<<<<< HEAD
+import 'analytics_detail_page.dart';
+=======
+>>>>>>> origin/main
 
 class WorkoutsTabPage extends StatefulWidget {
   final bool isPremium;
@@ -100,6 +104,95 @@ class _PillTabBar extends StatelessWidget {
 class AnalyticsView extends StatelessWidget {
   final bool isPremium;
   const AnalyticsView({super.key, required this.isPremium});
+<<<<<<< HEAD
+
+  @override
+  Widget build(BuildContext context) {
+    // The overlay paywall stays exactly as you had it.
+    return Stack(
+      children: [
+        GridView.count(
+          padding: const EdgeInsets.all(16),
+          crossAxisCount: 2,
+          mainAxisSpacing: 12,
+          crossAxisSpacing: 12,
+          children: [
+            _AnalyticsCard(
+              title: 'Workouts',
+              value: '5',
+              unit: 'sessions',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const AnalyticsDetailPage(
+                      title: 'Workouts',
+                      unit: 'sessions',
+                      data: [1, 0, 2, 0, 1, 1, 0],
+                    ),
+                  ),
+                );
+              },
+            ),
+            _AnalyticsCard(
+              title: 'Distance',
+              value: '12.5',
+              unit: 'km',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const AnalyticsDetailPage(
+                      title: 'Distance',
+                      unit: 'km',
+                      data: [2.0, 1.5, 0.0, 3.0, 4.0, 2.0, 0.0],
+                    ),
+                  ),
+                );
+              },
+            ),
+            _AnalyticsCard(
+              title: 'Calories',
+              value: '3200',
+              unit: 'kcal',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const AnalyticsDetailPage(
+                      title: 'Calories',
+                      unit: 'kcal',
+                      data: [500, 300, 0, 800, 900, 700, 0],
+                    ),
+                  ),
+                );
+              },
+            ),
+            _AnalyticsCard(
+              title: 'Steps',
+              value: '21k',
+              unit: 'steps',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const AnalyticsDetailPage(
+                      title: 'Steps',
+                      unit: 'steps',
+                      data: [4000, 2500, 0, 6000, 7000, 1500, 0],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+
+        if (!isPremium)
+          Positioned.fill(
+            child: IgnorePointer(
+              ignoring: false,
+=======
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -132,6 +225,7 @@ class AnalyticsView extends StatelessWidget {
           Positioned.fill(
             child: IgnorePointer(
               ignoring: false, // block taps for free users
+>>>>>>> origin/main
               child: Container(
                 alignment: Alignment.center,
                 color: Colors.white.withOpacity(0.70),
@@ -147,6 +241,10 @@ class AnalyticsView extends StatelessWidget {
   }
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/main
 class _WorkoutsView extends StatefulWidget {
   const _WorkoutsView();
   @override
@@ -292,3 +390,52 @@ class _MetricCard extends StatelessWidget {
     );
   }
 }
+<<<<<<< HEAD
+
+class _AnalyticsCard extends StatelessWidget {
+  final String title;
+  final String value; // headline number (e.g., "12.5")
+  final String unit;  // displayed under value (e.g., "km")
+  final VoidCallback onTap;
+
+  const _AnalyticsCard({
+    required this.title,
+    required this.value,
+    required this.unit,
+    required this.onTap,
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(16),
+      child: Card(
+        elevation: 0,
+        color: AppTheme.purpleLight.withOpacity(0.45),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
+              const SizedBox(height: 10),
+              Text(
+                value,
+                style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
+              ),
+              const SizedBox(height: 4),
+              Text(unit, style: const TextStyle(color: Colors.black54)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+=======
+>>>>>>> origin/main

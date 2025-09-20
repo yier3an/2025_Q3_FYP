@@ -1,5 +1,14 @@
 
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+import '../theme/app_theme.dart';
+class StatCard extends StatelessWidget {
+  final String title; // label
+  final String value; // number
+  final IconData icon;
+  final Color? background; // optional tinted icon background
+  final bool square; // unused now, kept for API compatibility
+=======
 
 class StatCard extends StatelessWidget {
   final String title;
@@ -7,6 +16,7 @@ class StatCard extends StatelessWidget {
   final IconData icon;
   final Color? background;
   final bool square;
+>>>>>>> origin/main
   const StatCard({
     super.key,
     required this.title,
@@ -18,6 +28,38 @@ class StatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
+    final color = background ?? AppTheme.purple.withOpacity(0.15);
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Row(
+          children: [
+            Container(
+              width: 44,
+              height: 44,
+              decoration: BoxDecoration(
+                color: color,
+                shape: BoxShape.circle,
+              ),
+              child: Icon(icon, color: AppTheme.purpleDark),
+            ),
+            const SizedBox(width: 12),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(value, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
+                Text(title, style: TextStyle(color: Colors.grey[700])),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+=======
     final card = Container(
       decoration: BoxDecoration(
         color: background ?? Colors.white,
@@ -50,3 +92,4 @@ class StatCard extends StatelessWidget {
     return card;
   }
 }
+>>>>>>> origin/main
