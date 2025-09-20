@@ -5,7 +5,10 @@ import '../widgets_paywall.dart';
 import 'shared_header.dart';
 import 'settings_page.dart';
 import 'workout_edit_page.dart';
+<<<<<<< HEAD
 import 'analytics_detail_page.dart';
+=======
+>>>>>>> origin/main
 
 class WorkoutsTabPage extends StatefulWidget {
   final bool isPremium;
@@ -101,6 +104,7 @@ class _PillTabBar extends StatelessWidget {
 class AnalyticsView extends StatelessWidget {
   final bool isPremium;
   const AnalyticsView({super.key, required this.isPremium});
+<<<<<<< HEAD
 
   @override
   Widget build(BuildContext context) {
@@ -188,6 +192,40 @@ class AnalyticsView extends StatelessWidget {
           Positioned.fill(
             child: IgnorePointer(
               ignoring: false,
+=======
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        ListView(
+          padding: const EdgeInsets.all(12),
+          children: [
+            Wrap(spacing: 8, runSpacing: 8, children: const [
+              _MetricCard(title: 'Calories Burned', value: '512k', subtitle: '+8% of target'),
+              _MetricCard(title: 'KM ran', value: '2M', subtitle: '+8% of target'),
+            ]),
+            const SizedBox(height: 8),
+            Container(
+              decoration: BoxDecoration(
+                  color: AppTheme.purpleLight, borderRadius: BorderRadius.circular(12)),
+              padding: const EdgeInsets.all(16),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
+                Text('Pushups Completed', style: TextStyle(fontWeight: FontWeight.w600)),
+                SizedBox(height: 80, child: Placeholder()),
+              ]),
+            ),
+            const SizedBox(height: 12),
+            const Text('Profile Analytics', style: TextStyle(fontWeight: FontWeight.bold)),
+            const ListTile(title: Text('Followers count'), trailing: Text('855')),
+            const ListTile(title: Text('Followed count'), trailing: Text('723')),
+            const ListTile(title: Text('Longest Streak'), trailing: Text('25 Days')),
+          ],
+        ),
+        if (!isPremium)
+          Positioned.fill(
+            child: IgnorePointer(
+              ignoring: false, // block taps for free users
+>>>>>>> origin/main
               child: Container(
                 alignment: Alignment.center,
                 color: Colors.white.withOpacity(0.70),
@@ -203,7 +241,10 @@ class AnalyticsView extends StatelessWidget {
   }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 class _WorkoutsView extends StatefulWidget {
   const _WorkoutsView();
   @override
@@ -349,6 +390,7 @@ class _MetricCard extends StatelessWidget {
     );
   }
 }
+<<<<<<< HEAD
 
 class _AnalyticsCard extends StatelessWidget {
   final String title;
@@ -395,3 +437,5 @@ class _AnalyticsCard extends StatelessWidget {
   }
 }
 
+=======
+>>>>>>> origin/main

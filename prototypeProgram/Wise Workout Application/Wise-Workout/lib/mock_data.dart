@@ -27,7 +27,11 @@ class Exercise {
 
 class MockData {
   static final accounts = <AppUser>[
+<<<<<<< HEAD
     AppUser(id: 'u1', email: 'user@gmail.com', password: 'user123', displayName: 'Irfaan'),
+=======
+    AppUser(id: 'u1', email: 'user@demo.com', password: 'password123', displayName: 'Irfaan'),
+>>>>>>> origin/main
     AppUser(id: 'u2', email: 'instructor@demo.com', password: 'password123', displayName: 'Coach Kim', tier: 'Premium User'),
     AppUser(id: 'u3', email: 'admin@demo.com', password: 'password123', displayName: 'Admin A', tier: 'Premium User'),
   ];

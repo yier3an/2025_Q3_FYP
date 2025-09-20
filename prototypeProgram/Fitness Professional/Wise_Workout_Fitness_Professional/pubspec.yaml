@@ -9,7 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+<<<<<<< HEAD
   google_fonts: ^6.2.1
+=======
+
+>>>>>>> origin/main
 dev_dependencies:
   flutter_test:
     sdk: flutter

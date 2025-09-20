@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import '../theme/app_theme.dart';
+=======
+>>>>>>> origin/main
 
 class SideNav extends StatelessWidget {
   final void Function(String route) onNavigate;
@@ -7,6 +10,7 @@ class SideNav extends StatelessWidget {
   const SideNav({super.key, required this.onNavigate, required this.onLogout});
 
   Widget _navItem(IconData icon, String title, String route, BuildContext ctx) {
+<<<<<<< HEAD
     final currentRoute = ModalRoute.of(ctx)?.settings.name;
     final selected = currentRoute == route;
 
@@ -36,12 +40,22 @@ class SideNav extends StatelessWidget {
           ],
         ),
       ),
+=======
+    final selected = ModalRoute.of(ctx)?.settings.name == route;
+    return ListTile(
+      leading: Icon(icon, color: selected ? Colors.white : Colors.white70),
+      title: Text(title, style: TextStyle(color: selected ? Colors.white : Colors.white70)),
+      selected: selected,
+      selectedTileColor: Colors.white.withOpacity(0.12),
+      onTap: () => onNavigate(route),
+>>>>>>> origin/main
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
+<<<<<<< HEAD
       width: 260, // ✅ Admin-like width
       color: AppTheme.sidebarBg, // ✅ Admin sidebar bg
       child: SafeArea(
@@ -99,6 +113,43 @@ class SideNav extends StatelessWidget {
           ],
         ),
       ),
+=======
+      width: 240,
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Color(0xFF2A0066), Color(0xFF4B0099)],
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(height: 16),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('WISE WORKOUT', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
+          ),
+          _navItem(Icons.dashboard, 'Dashboard', '/dash', context),
+          _navItem(Icons.fitness_center, 'Workout List', '/workouts', context),
+          _navItem(Icons.chat_bubble_outline, 'User Chats', '/chats', context),
+          _navItem(Icons.settings, 'Settings', '/settings', context),
+          const Spacer(),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white.withOpacity(0.15),
+                foregroundColor: Colors.white,
+              ),
+              onPressed: onLogout,
+              icon: const Icon(Icons.logout),
+              label: const Text('Logout'),
+            ),
+          ),
+        ],
+      ),
+>>>>>>> origin/main
     );
   }
 }

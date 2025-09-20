@@ -13,8 +13,13 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+<<<<<<< HEAD
   final _email = TextEditingController(text: 'user@gmail.com');
   final _pass  = TextEditingController(text: 'user123');
+=======
+  final _email = TextEditingController(text: 'user@demo.com');
+  final _pass  = TextEditingController(text: 'password123');
+>>>>>>> origin/main
   bool _loading = false;
   String? _error;
 
@@ -31,7 +36,11 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+<<<<<<< HEAD
                   const Text('Wise Workout Prototype', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+=======
+                  const Text('Wise Workout (Mock)', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+>>>>>>> origin/main
                   const SizedBox(height: 16),
                   TextField(controller: _email, decoration: const InputDecoration(labelText: 'Email')),
                   const SizedBox(height: 8),
@@ -58,7 +67,11 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   const SizedBox(height: 12),
                   const Text(
+<<<<<<< HEAD
                     'Use demo accounts:\nuser@gmail.com / user123\n'
+=======
+                    'Use demo accounts:\nuser@demo.com / password123\n'
+>>>>>>> origin/main
                     'instructor@demo.com / password123\n'
                     'admin@demo.com / password123',
                     textAlign: TextAlign.center,

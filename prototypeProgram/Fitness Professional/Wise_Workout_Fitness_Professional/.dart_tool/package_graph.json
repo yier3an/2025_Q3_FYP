@@ -7,8 +7,12 @@
       "name": "wise_workout_fp_web",
       "version": "0.1.0+1",
       "dependencies": [
+<<<<<<< HEAD
         "flutter",
         "google_fonts"
+=======
+        "flutter"
+>>>>>>> origin/main
       ],
       "devDependencies": [
         "flutter_test"
@@ -206,6 +210,7 @@
       "name": "vm_service",
       "version": "15.0.2",
       "dependencies": []
+<<<<<<< HEAD
     },
     {
       "name": "google_fonts",
@@ -338,6 +343,8 @@
         "flutter",
         "path_provider_platform_interface"
       ]
+=======
+>>>>>>> origin/main
     }
   ],
   "configVersion": 1
